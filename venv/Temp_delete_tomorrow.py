@@ -17,3 +17,5 @@ print(my_map(all_sum,[1,2,3,4,5]))
 print(my_map(delenie,[1,2,3,4,5,6]))
 
 print(my_map(lambda x:x/2,[2,4,6]))
+
+my_map(lambda x:x**x,[1,2,3,4])
