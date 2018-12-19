@@ -8,6 +8,9 @@ adverb = ["loudly", "quietly", "well", "badly", "many"]
 def random_string():
     try:
         count_item=int(input("Количество генерируемых строк: "))
+        if count_item<1 or count_item>11:
+            raise Exception("Вне диапазона")
+
     except Exception:
         count_item=5
 
