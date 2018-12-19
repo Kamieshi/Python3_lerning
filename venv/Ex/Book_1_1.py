@@ -78,12 +78,13 @@ def convert_print(number):
     while index_line < len(numbers_list[0]):
         for item in number:
             try:
-                line_out += numbers_list[int(item)][index_line]
+                line_out += numbers_list[int(item)][index_line].replace("*",str(item))
             except ValueError:
-                line_out += numbers_list[10][index_line]
+                line_out += numbers_list[10][index_line].replace("*",".")
         index_line += 1
         print(line_out)
         line_out = ""
 
     return 0
+convert_print(12.505)
 

@@ -2,7 +2,7 @@ def fun(value):
     list = [[0 for item in range(value)] for item in range(value)]
 
 
-value = 5
+value = 100
 if value % 2 != 0:
     center = int((value - 1) / 2)
 else:
