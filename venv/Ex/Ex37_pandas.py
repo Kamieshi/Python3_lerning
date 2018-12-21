@@ -44,3 +44,4 @@ print("Exersice 7")
 
 for item in list(range(1, 4)):
     print("Умерло", df[(df["Pclass"] == item) & (df["Survived"] == 0)].shape[0], "человек", item, "класса")
+
